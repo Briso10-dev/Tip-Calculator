@@ -1,7 +1,7 @@
 
-function Conclusion(){ç
+function Conclusion(){
     return(
-        <p>You pay ...</p>
+        <p className="text-4xl p-2 font-medium">You pay ...</p>
 
     )
 }
