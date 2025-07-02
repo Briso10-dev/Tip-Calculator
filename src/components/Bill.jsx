@@ -1,7 +1,10 @@
 
 function Bill(){
     return(
-        <div></div>
+        <div className="flex items-center gap-2">
+            <p>How much was the bill ? </p>
+            <input type="text" />
+        </div>
     )
 
 }
