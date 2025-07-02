@@ -1,43 +1,35 @@
 import { useState } from "react";
 
-function Service({text}){
-    const services = [ 
-        {
-            value : 0,
-            appreciation : "Dissatisfied"
+function Service({ text }) {
+    const values = {
+        value1: 0,
+        value2: 5,
+        value3: 10,
+        value4: 20,
+    }
+    const apreciations = {
 
-        },
-        {
-            value : 10,
-            appreciation : "It was okay"
+        appreciation1: "Dissatisfied(0%)",
+        appreciation2: "It was okay(5%)",
+        appreciation3: "It was good(10%)",
+        appreciation4: "Absolute amazing(20%)"
+    }
 
-        },
-        {
-            value : 10,
-            appreciation : "It was good"
+    const [service, setService] = useState([]);
 
-        },
-        {
-            value : 20,
-            appreciation : "Absolute amazing"
-
-        }
-    ]
-
-    const [service, setService] = useState("");
-
-     return(
+    return (
         <div className="flex items-center gap-6 text-4xl font-medium">
             <p> {text} </p>
-            <select 
-            type="text"
-            value={service}
-            onChange={(e) => setService(e.target.value)}
-            className="border-s-8 text-3xl bg-gray-200">
-            <option value="Dissatisfied">Dissatisfied(0%)</option>
-            <option value="okay">It was okay(5%)</option>
-            <option value="good">It was good(10%)</option>
-            <option value="wow">Absolute amazing!</option>      
+            <select
+                key={service.value}
+                type="text"
+                value={service.appreciation}
+                onChange={(e) => setService(e.target.value)}
+                className="border-s-8 text-3xl bg-gray-200">
+                <option value={values.value1}>{apreciations.appreciation1}</option>
+                <option value={values.value2}>{apreciations.appreciation2}</option>
+                <option value={values.value3}>{apreciations.appreciation3}</option>
+                <option value={values.value4}> {apreciations.appreciation4} </option>
             </select>
         </div>
     )
