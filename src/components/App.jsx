@@ -17,7 +17,7 @@ function App() {
       <Bill bill={bill} onSetBill={handleBill} />
       <Service text="How did you like the service" />
       <Service text="How did your friend like the service"/>
-      <Conclusion/>
+      <Conclusion bill= {bill} />
       <Reset />
     </div>
   )
