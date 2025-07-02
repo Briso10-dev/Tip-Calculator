@@ -6,7 +6,8 @@ function App() {
   return (
     <>
       <Bill />
-      <Service />
+      <Service text="How did you like the service" />
+      <Service text="How did your friend like the service"/>
     </>
   )
 }

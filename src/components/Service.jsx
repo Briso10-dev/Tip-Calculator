@@ -1,8 +1,8 @@
 
-function Service(){
+function Service({text}){
      return(
-        <div className="flex items-center gap-4 text-4xl font-medium">
-            <p> How did you like the service? </p>
+        <div className="flex items-center gap-6 text-4xl font-medium">
+            <p> {text} </p>
             <select 
             type="text"
             className="border-s-8 text-3xl bg-gray-200">

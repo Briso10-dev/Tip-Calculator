@@ -1,7 +1,7 @@
 
 function Bill(){
     return(
-        <div className="flex items-center gap-4 text-4xl font-medium">
+        <div className="flex items-center gap-6 text-4xl font-medium">
             <p>How much was the bill ? </p>
             <input 
             type="text"
