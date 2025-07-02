@@ -5,7 +5,7 @@ function Service(){
             <p> How did you like the service? </p>
             <select 
             type="text"
-            className="outline-none border-s-8 rounded-md border-gray-200 p-2 text-2xl bg-gray-200">
+            className="border-s-8 text-3xl bg-gray-200">
             <option value="Dissatisfied">Dissatisfied(0%)</option>
             <option value="okay">It was okay(5%)</option>
             <option value="good">It was good(10%)</option>
