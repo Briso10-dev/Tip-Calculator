@@ -1,10 +1,14 @@
+import { useState } from "react";
 
 function Service({text}){
+    const [service, setService] = useState("wow");
+
      return(
         <div className="flex items-center gap-6 text-4xl font-medium">
             <p> {text} </p>
             <select 
             type="text"
+            value={service}
             className="border-s-8 text-3xl bg-gray-200">
             <option value="Dissatisfied">Dissatisfied(0%)</option>
             <option value="okay">It was okay(5%)</option>
