@@ -1,6 +1,29 @@
 import { useState } from "react";
 
 function Service({text}){
+    const services = [ 
+        {
+            value : 0,
+            appreciation : "Dissatisfied"
+
+        },
+        {
+            value : 10,
+            appreciation : "It was okay"
+
+        },
+        {
+            value : 10,
+            appreciation : "It was good"
+
+        },
+        {
+            value : 20,
+            appreciation : "Absolute amazing"
+
+        }
+    ]
+
     const [service, setService] = useState("");
 
      return(
