@@ -14,15 +14,20 @@ function App() {
     setBill(Number(e.target.value));
   }
 
+  
+
   return (
     <div className="flex flex-col justify-center gap-6 bg-gray-50">
       <Bill bill={bill} onSetBill={handleBill} />
       <Service 
-      
+       percentage = {percentage1}
+       onSelect = {setPercentage1}>
     
-        How did you like the service</Service>
+        How did you like the service
+      </Service>
       <Service 
-      
+      percentage = {percentage2}
+      onSelect = {setPercentage2}>
       How did your friend like the service
       </Service>
       <Conclusion bill={bill} />
