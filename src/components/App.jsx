@@ -34,8 +34,11 @@ function App() {
       onSelect = {setPercentage2}>
       How did your friend like the service
       </Service>
-      <Conclusion bill={bill} tip= {tip} />
+     {bill > 0 && (
+      <>
+       <Conclusion bill={bill} tip= {tip} />}
       <Reset onReset = {handleReset} />
+      </>
     </div>
   )
 }
