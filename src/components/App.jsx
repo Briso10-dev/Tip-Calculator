@@ -14,7 +14,7 @@ function App() {
     setBill(Number(e.target.value));
   }
 
-  
+  const tip = (bill * (percentage1 + percentage2) /2 /100);  //Here a derived State
 
   return (
     <div className="flex flex-col justify-center gap-6 bg-gray-50">
