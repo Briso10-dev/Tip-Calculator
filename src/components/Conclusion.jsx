@@ -3,7 +3,7 @@ function Conclusion({bill}){
 
 
     return(
-        <p className="text-4xl p-2 font-bold">You pay ${bill} (${bill} + $...) </p>
+        <h3 className="text-4xl p-2 font-bold">You pay ${bill} (${bill} + $...) </h3>
 
     )
 }
