@@ -1,9 +1,9 @@
 
-function Conclusion({bill}){
+function Conclusion({bill,tip}){
 
 
     return(
-        <h3 className="text-4xl p-2 font-bold">You pay X (${bill} + $B tip) </h3>
+        <h3 className="text-4xl p-2 font-bold">You pay ${bill + tip} (${bill} + ${tip}) </h3>
 
     )
 }
