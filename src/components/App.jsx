@@ -22,7 +22,7 @@ function App() {
   const tip = (bill * (percentage1 + percentage2) / 2 / 100);  //Here a derived State
 
   return (
-    <div className="flex flex-col justify-center gap-6 bg-gray-50">
+    <div className="flex flex-col justify-center gap-6 bg-gray-50 px-[2rem] py-[2rem]">
       <Bill bill={bill} onSetBill={handleBill} />
       <Service
         percentage={percentage1}

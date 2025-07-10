@@ -6,7 +6,7 @@ function Service({ children, percentage, onSelect }) {
             <label> {children} </label>
             <select value={percentage}
                 onChange={e => onSelect(Number(e.target.value))}
-                className="border-s-8 text-3xl bg-gray-200">
+                className="border-s border-none text-3xl bg-gray-200">
                 <option value="0">Dissatisfied (0%)</option>
                 <option value="5">It was okay (5%)</option>
                 <option value="10">It was good(10%)</option>
