@@ -26,15 +26,15 @@ The Tip Calculator is a simple web application that helps users determine how mu
    git clone https://github.com/Briso10-dev/Tip-Calculator
 
 2. Navigate to the project directory:
-   ´´´bash
+    ```bash
    cd Tip-Calculator
 
 3. Install the required dependencies:
-    ´´´bash
+    ```bash
     npm install
 
 4. Start the development server:
-    ´´´bash
+    ```bash
     npm start
 
 Project Structure
